@@ -154,6 +154,8 @@
   .lab-card.flagship p{color:#CBDEE1;}
   .type{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--gold);}
   .tech{margin-top:4px; font-family:"IBM Plex Mono",monospace; font-size:.76rem; color:#8FBFB5;}
+  .lab-link{margin-top:6px; align-self:flex-start; font-family:"IBM Plex Mono",monospace; font-size:.78rem; color:var(--teal); text-decoration:none; border-bottom:1px solid transparent;}
+  .lab-link:hover{border-color:var(--teal);}
 
   /* ---------- CREDENTIALS ---------- */
   .cred-label{margin:0 0 16px;}
@@ -233,12 +235,12 @@
 
     <div class="intro">
       <div>
-        <p class="first">I’m a technology professional with 20+ years of experience across business analysis, solution design, project delivery and product transformation — mainly in insurance and financial services.</p>
-        <p>A big part of my work has been understanding business problems, asking the right questions, working out practical solutions, and then bringing business and technology teams together to make them happen. I’ve worked across insurance core systems, digital transformation, integrations, automation, data, AML-CFT, customer experience and, more recently, AI.</p>
+        <p class="first">I’m a technology professional with 20+ years of experience across business analysis, solution design, project delivery and product transformation, mainly in insurance and financial services, and increasingly at the intersection of AI, governance and business strategy. A big part of my work has been understanding business problems, asking the right questions, working out practical solutions, and bringing business and technology teams together to make them happen. I’ve worked across insurance core systems, digital transformation, integrations, automation, data, AML-CFT, customer experience and, more recently, AI.</p>
+        <p>Depending on what a project needs, I’m comfortable getting into the detail myself by analysing a problem, working through requirements, designing a solution or figuring out how something should work. I’m equally comfortable stepping back, coordinating different teams, resolving issues and keeping things moving towards delivery. That mix of hands-on problem solving and working across teams has shaped how I approach transformation.</p>
       </div>
       <div>
-        <p>Depending on what a project needs, I’m comfortable getting into the detail myself — analysing the problem, working through requirements, designing the solution, or figuring out how something should work. I’m just as comfortable coordinating moving parts, solving issues and helping a project get over the line.</p>
-        <p>I’m curious by nature and always keen to learn something new. Outside work, I’m a bit of a DIY guy: if I don’t know how something works, I usually want to figure it out myself. I enjoy experimenting with technology, building and fixing things, and finding a simpler or better way of doing something.</p>
+        <p>I tend to look at technology through a business-value lens. It’s not just about what a system can do, but what it can do for the organisation, its customers, operations, efficiency, products and future potential. That’s the lens I bring to an AI opportunity, a business problem or a legacy system that has become a bottleneck. I’m interested in where technology can genuinely improve the way a business works, rather than using technology simply because it is available.</p>
+        <p>I’m still a DIY guy at heart. I build terrariums and RC vehicles when time permits. I like figuring things out myself, and I build the AI tools I advise people to think about, often experimenting with them in the evenings. It keeps my thinking grounded. If I can’t get an AI agent to work reliably myself, I’m certainly not going to tell a client that it’s ready to run their operations. I often write on LinkedIn about Business Analysis, project delivery, AI, governance and the practical side of using technology to create business value.</p>
       </div>
     </div>
 
@@ -369,6 +371,13 @@
     <p class="lab-intro">Outside the day job, I build working prototypes that connect insurance domain depth to agentic AI — mostly with Claude, mostly evenings. This is where the BA instincts meet the builder instincts.</p>
 
     <div class="lab-stack">
+      <article class="lab-card">
+        <span class="type">Platform build</span>
+        <h3>RAG Chatbot Builder</h3>
+        <p>A multi-agent, NotebookLM-style chatbot builder and admin platform: knowledge base ingestion across documents, sheets and images, moderation, and admin-configurable AI behaviour.</p>
+        <div class="tech">Python · Gradio · Render</div>
+        <a class="lab-link" href="https://knowledge-agent-platform-gbn6.onrender.com" target="_blank" rel="noopener">Try it live ↗</a>
+      </article>
       <article class="lab-card flagship">
         <span class="type">Flagship</span>
         <h3>ClearWatch — Sanctions &amp; Adverse Media Screening Agent</h3>
@@ -380,12 +389,6 @@
         <h3>Agentic Insurance Product Pipeline</h3>
         <p>A working demo chaining specialist Claude agents to take a term life insurance product from definition through pricing to SQL implementation — a full product lifecycle run by orchestrated agents.</p>
         <div class="tech">Claude API · React · chained agents</div>
-      </article>
-      <article class="lab-card">
-        <span class="type">Platform build</span>
-        <h3>RAG Chatbot Builder</h3>
-        <p>A multi-agent, NotebookLM-style chatbot builder and admin platform: knowledge base ingestion across documents, sheets and images, moderation, and admin-configurable AI behaviour.</p>
-        <div class="tech">Python · Gradio · Render</div>
       </article>
       <article class="lab-card">
         <span class="type">Tool</span>
@@ -484,8 +487,63 @@
 </footer>
 
 <script>
-  // Add LinkedIn posts here: { date:'Aug 2026', tag:'AI in insurance', title:'…', excerpt:'…', url:'https://www.linkedin.com/posts/…' }
-  var POSTS = [];
+  // LinkedIn posts, most recent first
+  var POSTS = [
+    {
+      tag: 'AI & Business Analysis',
+      title: 'Producing BRDs in the AI Era',
+      excerpt: 'AI can write a fast, polished BRD — but that’s the visible outcome, not the analysis. The value of a BA sits in the conversations, negotiation and judgement that happen before the document exists.',
+      url: 'https://www.linkedin.com/feed/update/urn:li:activity:7503203041035169792/'
+    },
+    {
+      tag: 'Business Strategy',
+      title: 'What Buyers Actually Value in a Business',
+      excerpt: 'A framework for advising a struggling business owner: buyers pay for products, customers, operations and future potential, not yesterday’s revenue. Sometimes the real work is business transformation, not digital transformation.',
+      url: 'https://www.linkedin.com/feed/update/urn:li:activity:7487895410515099648/'
+    },
+    {
+      tag: 'AI Governance & Compliance',
+      title: 'Navigating AI Governance in Malaysia: Three Pillars Every Organisation Must Understand',
+      excerpt: 'Mapping how RMiT, PDPA and AIGE work together as one system for responsible AI deployment in Malaysia — infrastructure, data and decision-making governed as an integrated whole, not separate workstreams.',
+      url: 'https://www.linkedin.com/feed/update/urn:li:activity:7459833066199592961/'
+    },
+    {
+      tag: 'InsurTech & Product Strategy',
+      title: 'Is Life Insurance Built for a World That No Longer Works 9-to-5?',
+      excerpt: 'APAC’s gig economy has outgrown legacy underwriting. A case for Adaptive Protection Architecture — premium pause/resume, predictive lapse-risk AI, and living benefits built for income-volatile workers.',
+      url: 'https://www.linkedin.com/feed/update/urn:li:activity:7454650595858108417/'
+    },
+    {
+      tag: 'Leadership & Alignment',
+      title: 'Strategy Is a Puzzle — Every Department Holds a Piece',
+      excerpt: 'Why cross-team silos quietly kill strategy execution, and what changes when every employee, not just the boardroom, understands how their KPIs connect to the company’s goals.',
+      url: 'https://www.linkedin.com/feed/update/urn:li:activity:7452491635038375936/'
+    },
+    {
+      tag: 'Project & Programme Management',
+      title: 'How I Plan When Complexity Is Still Forming',
+      excerpt: 'A carousel on planning under ambiguity — using Progressive Elaboration and Rolling Wave Planning to give sponsors direction early without forcing false certainty in regulated, AI-touched programmes.',
+      url: 'https://www.linkedin.com/feed/update/urn:li:activity:7418834048346824704/'
+    },
+    {
+      tag: 'AI Maturity & Foundations',
+      title: 'Beyond AI Hype: The True Foundations of Digital Transformation Success',
+      excerpt: 'AI is an accelerator, not a magic bullet — it can’t fix a broken foundation. Why data strategy, legacy modernisation and cybersecurity maturity have to come before the next AI use case.',
+      url: 'https://www.linkedin.com/feed/update/urn:li:activity:7402096808119877633/'
+    },
+    {
+      tag: 'Digital-First Banking & Insurance',
+      title: 'From Bricks to Clicks',
+      excerpt: 'A roadmap for shrinking branch networks into micro advisory hubs — routine servicing moves to mobile, self-service and responsible AI, while branches focus on the high-value, trust-building moments that still need a human.',
+      url: 'https://www.linkedin.com/posts/naveen-k-m_digitaltransformation-bfsi-insuranceinnovation-share-7398333675236618240-AmtZ/'
+    },
+    {
+      tag: 'AI & Business Analysis',
+      title: 'BAs and POs Weren’t Hired to Be Scribes',
+      excerpt: 'Automation is replacing task-takers, not the art of problem definition. A call for Business Analysts and Product Owners to move upstream, into strategy, business cases and vendor evaluation, before a single requirement is written.',
+      url: 'https://lnkd.in/p/gGgc58KE'
+    }
+  ];
 
   (function(){
     var pov = document.getElementById('pov');
@@ -495,9 +553,8 @@
       POSTS.forEach(function(p){
         var a = document.createElement('article'); a.className = 'post';
         var meta = document.createElement('div'); meta.className = 'meta';
-        var d = document.createElement('span'); d.textContent = p.date;
         var t = document.createElement('span'); t.className = 'tg'; t.textContent = p.tag || '';
-        meta.appendChild(d); meta.appendChild(t);
+        meta.appendChild(t);
         var h = document.createElement('h3'); h.textContent = p.title;
         var x = document.createElement('p'); x.textContent = p.excerpt;
         var l = document.createElement('a'); l.className = 'rd'; l.href = p.url; l.target = '_blank'; l.rel = 'noopener'; l.textContent = 'Read the post ↗';
